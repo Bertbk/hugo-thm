@@ -1,18 +1,18 @@
-{{ $label := "" }}
+{{ $ref := "" }}
 {{ $text := "" }}
 {{if .IsNamedParams }}
-  {{ $label = .Get "label" }}
+  {{ $ref = .Get "ref" }}
   {{with .Get "text" }}
     {{ $text = . }}
   {{else}}
     {{ $text = .Inner }}
   {{ end }}
 {{else}}
-  {{ $label = .Get 0 }}
+  {{ $ref = .Get 0 }}
   {{ if .Get 1 }}
     {{ $text = .Get 1}}
   {{else}}
     {{ $text = .Inner }}
   {{ end }}
 {{ end }}
-<a href="#{{ $label }}">{{ $text | markdownify}}</a>
+<a href="#{{ $ref }}">{{ $text | markdownify}}</a>
