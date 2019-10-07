@@ -7,65 +7,104 @@ https://felix11h.github.io/blog/mathjax-theorems
 }
 
 div.thm {
-  display: block;
-  margin: 12px 0;
-  padding: 0px 20px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   font-style: italic;
 }
 
-div.thm p:first-child{
+div.thm p.thm-title{
   font-weight: bold;
   font-style: normal;
   margin-bottom:0px;
-}
-
-div.thm p:first-child{
   font-size:1.2em;
 }
-div.thm.thm-proof p:first-child{
-  font-size:1em;
+div.thm p.thm-title::first-letter{
+  padding: 0px 0.1em;
 }
 
-.thm-theorem{
-  border-left: 6px solid;
+div.thm-inner{
+  margin: 0px;
+  margin-top: -0.3em;
+  padding: 0px 12px;
+  font-style: italic;
+  border-left: 4px solid;
+  border-bottom: 4px solid;
+}
+div.thm-inner.thm-theorem{
   border-color: red;
 }
-div.thm-theorem p.thm-title{
-  content: "Théorème.";
+div.thm p.thm-title.thm-theorem::first-letter{
+background-color: red;
+color: #FFF;
 }
 
-.thm-proposition{
-  border-left: 6px solid;
+div.thm-inner.thm-proposition{
   border-color: orange;
 }
-
-.thm-corollary{
-  border-left: 6px solid;
+div.thm p.thm-title.thm-proposition::first-letter{
+  background-color: orange;
+  color: #FFF;
+}
+div.thm-inner.thm-corollary{
   border-color: yellowgreen;
 }
-
-.thm-lemma{
-  border-left: 6px solid;
+div.thm p.thm-title.thm-corollary::first-letter{
+  background-color: yellowgreen;
+  color: #FFF;
+}
+div.thm-inner.thm-lemma{
   border-color: grey;
 }
-
-.thm-definition{
-  border-left: 6px solid;
+div.thm p.thm-title.thm-lemma::first-letter{
+  background-color: grey;
+  color: #FFF;
+}
+div.thm-inner.thm-definition{
   border-color:blue;
 }
-
-.thm-remark{
-  border-left: 6px solid;
+div.thm p.thm-title.thm-definition::first-letter{
+  background-color: blue;
+  color: #FFF;
+}
+div.thm-inner.thm-remark{
   border-color: green;
 }
-
-.thm.thm-proof{
-  padding: 0px;
-}
-.thm.thm-proof:after {
-  display:block;
-  content: "\25FC";
-  text-align:right;
-  font-size:1.5em;
+div.thm p.thm-title.thm-remark::first-letter{
+  background-color: green;
+  color: #FFF;
 }
 
+
+/* proof */
+
+div.thm p.thm-title-proof{
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom:0px;
+  font-size:1.2em;
+  border-top: dashed 1px;
+}
+
+p.thm-end-proof{
+  border-bottom: dashed 1px;
+  text-align: right;
+  padding-bottom: -25px;
+  font-size:1.2em;
+}
+
+div.thm a.thm-anchor{
+  text-decoration: none;
+  color:inherit;
+}
+
+div.thm a.thm-anchor:hover{
+  text-decoration:none;
+}
+
+div.thm a.thm-anchor:hover::after{
+  content: "\f0c1";
+  font-family: FontAwesome;
+  font-size:0.75em;
+  font-weight: normal;
+  color:blue;
+}
