@@ -5,7 +5,7 @@
 # Keep this file to update it!
 mkdir -p layouts/partials/shortcodes i18n assets/css
 git clone https://github.com/Bertbk/hugo-thm.git
-cp -r hugo-thm/thm layouts/partials/shortcodes/thm
-cp -r hugo-thm/i18n i18n/thm
-cp hugo-thm/css/thm.css assets/css/thm.css
+cp -r hugo-thm/layouts/partials/shortcodes/thm layouts/partials/shortcodes/thm
+cp -r hugo-thm/i18n/thm i18n/thm
+cp hugo-thm/assets/css/thm.css assets/css/thm.css
 rm -rf hugo-thm
