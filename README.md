@@ -53,6 +53,8 @@ A "theorem" can moreover be referenced using `thm/ref` using three different way
   Personally, my favorite is the {{< thm/ref "thm:me">}}covfefe Theorem{{< /thm/ref >}}.
   ```
 
+The result being the following:
+
 ![Cross Reference example](static/img/thm-cross-ref.png)
 
 ### Remark
