@@ -1,5 +1,8 @@
-# Hugo Thm
+# WARNING: DEPRECATED
 
+This repo is deprecated, please use [Academic Tools](https://github.com/Bertbk/academic-tools/) package!!
+
+# Hugo Thm
 The [`Academic`](https://github.com/gcushen/hugo-academic/) theme provides a [nice layout (=design) for documentation](https://sourcethemes.com/academic/docs/writing-markdown-latex/). The math expression can be written mostly as in a basic LaTeX file thanks to MathJax (just set `math = true` in the frontmatter of your `.md` file). Some features were however missing for a math course, especially the "AMS Theorem environment" of LaTeX.
 
 This is the purpose of this small "theme".
